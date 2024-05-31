@@ -64,3 +64,13 @@ small {
   margin-top: 3rem;
   text-align: center;
 }
+.flex {
+  display: flex;
+}
+.clearall {
+  background-color: rgb(153, 97, 209);
+  opacity: 0.5;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10%;
+}

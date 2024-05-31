@@ -2,6 +2,13 @@ const forms = document.getElementById('form');
 const input = document.getElementById('input');
 let todos = document.getElementById('todos');
 
+const clearall = document.getElementById('clearall');
+clearall.addEventListener('click', () => {
+  const todoEls = document.querySelectorAll('li');
+  todoEls.forEach((todoEl) => {
+    todoEl.remove();
+  });
+});
 forms.addEventListener('submit', (e) => {
   e.preventDefault();
   addtodo();
